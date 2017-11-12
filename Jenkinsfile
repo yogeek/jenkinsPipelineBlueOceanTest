@@ -6,6 +6,7 @@ pipeline {
                 docker { image 'maven:3-alpine' }
             }
             steps {
+                sh 'echo MAVEN VERSION...'
                 sh 'mvn --version'
             }
         }
