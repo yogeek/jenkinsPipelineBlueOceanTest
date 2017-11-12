@@ -15,7 +15,7 @@ pipeline {
             sh 'mvn --version'
           }
         }
-        stage('') {
+        stage('Front-end-parallel') {
           agent {
             docker {
               image 'node:7-alpine'
