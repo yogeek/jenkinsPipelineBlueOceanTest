@@ -28,16 +28,16 @@ pipeline {
         }
       }
     }
-    stage('Front-end') {
+    stage('Last-end') {
       agent {
         docker {
-          image 'node:7-alpine'
+          image 'python'
         }
         
       }
       steps {
-        sh 'echo NODE VERSION...'
-        sh 'node --version'
+        sh 'echo PYTHON VERSION...'
+        sh 'python -V'
       }
     }
   }
